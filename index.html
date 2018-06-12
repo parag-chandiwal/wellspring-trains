@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellspring - Parag Chandiwal</title>
+    <meta name="description" content="Wellspring Exercise" />
+    <meta name="author" content="Parag Chandiwal" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/papaparse.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main1.css">
+    <link href="css/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"> </head>
+<div id="fb-root"></div>
+<!--javascript sdk -->
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top"> <a class="navbar-brand" href="#">Wellsring</a>
+    
+   
+
+    
+    </nav>
+
+    <div class="container">
+        <div class="row main">
+            <!-- ad start -->
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="files">Upload a CSV formatted file:</label>
+                    <input type="file" id="files" class="form-control" accept=".csv" required /> </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            <div id="app"></div>
+        </div>
+        <div class="row">
+            <div class="starter-template">
+                <h1>Wellspring Train</h1>
+                <p class="lead">Welcome to Chi City's Train Hub - program that reads in a ‘comma separated values’ (CSV) file containing train information<br/> Please upload CSV file or Download Sample File Here -  <a href="Data/trains.csv" class="navbar-link">Train.csv</a></p>
+                
+            </div>
+            <div class="col-sm-9">
+                <table id='sortTable' class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)" width="10%;">Run No ^</th>
+                            <th onclick="sortTable(1)" width="15%;">Train Line ^</th>
+                            <th onclick="sortTable(2)"width="15%;">Route Name ^</th>
+                            <th onclick="sortTable(3)"width="15%;">Operator ID ^</th>
+                            <th width="20%;">Edit</th>
+                            <th width="20%;">Delete</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <h1 align="center">Add New Train</h1>
+                    <label for="new-line">Train Line:</label>
+                    <select name="new-line" id="new-line" class="form-control">
+                        <option value="El">EL</option>
+                        <option value="Amtrak">Amtrak</option>
+                        <option value="Metra">Metra</option>
+                    </select>
+                    <br>
+                    <label for="new-route">Route:</label>
+                    <input type="text" class="form-control" name="new-route" id="new-route">
+                    <br>
+                    <label for="new-run">Run Number:</label>
+                    <input type="text" class="form-control" name="new-run" id="new-run">
+                    <br>
+                    <label for="new-oid">Operator ID:</label>
+                    <input type="text" class="form-control" name="new-oid" id="new-oid">
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnAdd" onclick="contentLoaded()">Add New Train</button>
+                </div>
+                <br/>
+                <br/> </div>
+        </div>
+    </div>
+    <!--
+
+-->
+    <br/>
+    <br/>
+    <script src="js/papaparse.js"></script>
+    <script src="DataTables-1.10.15/media/js/canvasjs.min.js"></script>
+    <script src="DataTables-1.10.15/media/js/jquery.dataTables.min.js"></script>
+    <script src="DataTables-1.10.15/media/js/dataTables.jqueryui.min.js"></script>
+    <script src="DataTables-1.10.15/media/js/dataTables.bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body {
+	background-color: #e5e5ff;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: sans-serif;
+	}
+
+#whole-container {
+	width: 750px;
+	background-color: #e5e5ff;
+	margin:0 auto;
+	text-align: center;
+	padding: 10px;
+	}
+	
+.table {
+	font-size: 13px;
+	width: 100%;
+	background: #f8eded;
+	border-radius: 3px;
+	border-collapse: collapse;
+	margin: auto;
+	padding: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	}
+#subinput{
+	width: 30%;
+}
+#mesinput{
+	width: 35%;
+}
+#nameinput{
+	width:25%;
+}
+.detail{
+	display:none;
+}
+.detail td{
+	border:none;
+}
+.detail input{
+	width: 80%;
+}
+.detail .confirm{
+	display:none;
+}
+
+h1, h2 {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+margin-top: 10px;}
