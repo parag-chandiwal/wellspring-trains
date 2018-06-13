@@ -392,7 +392,6 @@ $(document).ready(function () {
             }
         }
     });
-  buildTable();
 });
 
 //------------------------------------Remove Duplicate entries from CSV file ---------------
